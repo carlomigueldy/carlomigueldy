@@ -16,7 +16,7 @@
                         </div>
                         <div class="column">
                             <p class="subtitle my-about has-text-justified">
-                                I am a college undergraduate and in my last year in university with a Bachelor's Degree in Information Technology, specializing in Database Systems at <a target="_blank" href="http://msuiit.edu.ph" class="has-text-primary">Mindanao State University - Iligan Institute of Technology</a>. I work on    fullstack development, proficient in PHP, Javascript, HTML5, CSS, SQL, utilizing frameworks like Laravel, Vue.js and prior experience with Nuxt.js and Ionic 4 on Web Development, also with experience in using OOP languages like Java, C++ and Python, and DBMS like MySQL, IBM DB2, PostgreSQL. I also have a background in Software Engineering, Project Management, Database Security, Administration and Management, Distributed Databases, Information Engineering, and Web Services.
+                                I am passionate in Software Engineering. I am proficient in using HTML, CSS, Javascript, PHP, SQL, utilizing frameworks like Laravel, Vue js and prior experience with Nuxt js. I also have a background in Software Engineering, Project Management, Database Security, Administration and Management, Distributed Databases, Information Engineering, and Web Services.
                             </p>
                             <section class="section" id="Skills">
 
