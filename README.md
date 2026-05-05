@@ -16,7 +16,6 @@
 
 [![Email](https://img.shields.io/badge/-carlomigueldy@gmail.com-0a0a0a?style=flat-square&logo=gmail&logoColor=white)](mailto:carlomigueldy@gmail.com)
 [![LinkedIn](https://img.shields.io/badge/-linkedin-0a0a0a?style=flat-square&logo=linkedin&logoColor=white)](https://linkedin.com/in/carlomigueldy)
-[![Website](https://img.shields.io/badge/-carlomigueldy.me-0a0a0a?style=flat-square&logo=safari&logoColor=white)](https://carlomigueldy.me)
 
 </div>
 
