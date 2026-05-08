@@ -12,7 +12,7 @@
 
 **I take ambiguous product requirements and turn them into shipped production systems.**
 
-`philippines · remote` — `7+ yrs eng` — `4+ yrs web3` — `daily claude code & codex`
+`philippines · remote` — `6+ yrs eng` — `4+ yrs web3` — `daily claude code & codex`
 
 [![Email](https://img.shields.io/badge/-carlomigueldy@gmail.com-0a0a0a?style=flat-square&logo=gmail&logoColor=white)](mailto:carlomigueldy@gmail.com)
 [![LinkedIn](https://img.shields.io/badge/-linkedin-0a0a0a?style=flat-square&logo=linkedin&logoColor=white)](https://linkedin.com/in/carlomigueldy)
