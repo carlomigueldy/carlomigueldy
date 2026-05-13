@@ -14,6 +14,7 @@
 
 `philippines · remote` — `7+ yrs eng` — `4+ yrs web3` — `daily claude code & codex`
 
+[![Portfolio](https://img.shields.io/badge/-carlomigueldy.dev-0a0a0a?style=flat-square&logo=vercel&logoColor=white)](https://carlomigueldy.dev)
 [![Email](https://img.shields.io/badge/-carlomigueldy@gmail.com-0a0a0a?style=flat-square&logo=gmail&logoColor=white)](mailto:carlomigueldy@gmail.com)
 [![LinkedIn](https://img.shields.io/badge/-linkedin-0a0a0a?style=flat-square&logo=linkedin&logoColor=white)](https://linkedin.com/in/carlomigueldy)
 
@@ -30,6 +31,7 @@ const miguel = {
   ownsEndToEnd: ['frontend', 'backend', 'smart contracts', 'tests', 'ci/cd', 'deploy'],
   shipsWith:    ['claude code', 'codex', 'mcp', 'sub-agents'],
   bestAt:       'turning vague product requirements into production systems',
+  portfolio:    'https://carlomigueldy.dev',
   status:       'open to joining a team · senior software / fullstack / web3 roles',
 };
 ```
@@ -84,7 +86,7 @@ The shape of the work I do best:
 - ambiguous problems that need a working answer, not a perfect one
 - a culture that respects both shipping speed *and* test coverage
 
-If that sounds like your team — `carlomigueldy@gmail.com`. I read everything.
+If that sounds like your team — [carlomigueldy.dev](https://carlomigueldy.dev) or `carlomigueldy@gmail.com`. I read everything.
 
 ---
 
