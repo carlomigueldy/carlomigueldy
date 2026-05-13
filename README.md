@@ -5,7 +5,7 @@
 │                                                             │
 │     C A R L O   M I G U E L   D Y    ·   @carlomigueldy     │
 │                                                             │
-│     senior full-stack  /  ai-augmented product engineer     │
+│        senior fullstack engineer  /  web3  /  ai-native     │
 │                                                             │
 └─────────────────────────────────────────────────────────────┘
 ```
@@ -23,14 +23,14 @@
 
 ### `// what I actually do`
 
-I'm a **senior full-stack product engineer** with deep Web3 experience and a daily AI-augmented engineering practice. I'm not just a frontend, backend, or smart contract engineer — I'm the one who owns the feature from a Figma frame and a half-written spec all the way to a green CI run and a production deploy.
+I'm a **senior fullstack engineer** with deep Web3 experience and a daily AI-augmented engineering practice. I'm not just a frontend, backend, or smart contract engineer — I'm the one who owns the feature from a Figma frame and a half-written spec all the way to a green CI run and a production deploy.
 
 ```ts
 const miguel = {
   ownsEndToEnd: ['frontend', 'backend', 'smart contracts', 'tests', 'ci/cd', 'deploy'],
   shipsWith:    ['claude code', 'codex', 'mcp', 'sub-agents'],
   bestAt:       'turning vague product requirements into production systems',
-  status:       'open to senior full-stack / web3 / ai-native roles',
+  status:       'open to joining a team · senior software / fullstack / web3 roles',
 };
 ```
 
@@ -39,7 +39,7 @@ const miguel = {
 ### `// recent work worth talking about`
 
 **🛰 &nbsp; MCP server platform** — `@AltLayer`
-> Took over a backend handover of an MCP server exposing read/write tools across Uniswap, SushiSwap, Polymarket, 1inch, Balancer, OKX, DeBank, OpenSea and others. Reduced the surface from **~400 tools → ~200**, then introduced a router-orchestration pattern that consolidated those into **~20 router tools** while preserving correct tool selection from natural-language inputs. Wired in CDP server wallets so LLMs can perform on-chain actions — with mandatory human confirmation before any write. Built the chat UI (multi-model, OpenRouter-backed) showing tool calls inline.
+> Took over a backend handover of an MCP server exposing read/write tools across Uniswap, SushiSwap, Polymarket, 1inch, Balancer, OKX, DeBank, OpenSea and others. Introduced a router-orchestration pattern that consolidated **~400 tools → ~20 router tools** while preserving correct tool selection from natural-language inputs. Wired in CDP server wallets so LLMs can perform on-chain actions — with mandatory human confirmation before any write. Built the chat UI (multi-model, OpenRouter-backed) showing tool calls inline.
 
 **🎯 &nbsp; Prediction markets platform** — `@Limitless Labs`
 > Founding engineer. Architected the Nest.js / Fastify / PostgreSQL backend using domain-driven design, structured around long-running multi-step business operations. Automated the full market lifecycle — creation, funding, on-chain execution, outcome reporting — turning a manual, error-prone process into an orchestration system that lets operators **create 10+ markets a day**.
@@ -55,13 +55,13 @@ const miguel = {
 ### `// the stack, honestly`
 
 ```
-languages      typescript · javascript · go · solidity
-frontend       react · next.js · chakra · tailwind · shadcn · react hook form · zod
+languages      typescript · javascript · python · go · solidity
+frontend       react · next.js · tailwind · shadcn · chakra · react hook form · zod
 backend        node.js · nest.js · fastify · hono · postgres · prisma · ddd
-web3           hardhat · foundry · ethers · viem · wagmi · privy · gnosis safe · tenderly
+web3           foundry · hardhat · ethers · viem · wagmi · privy · gnosis safe · tenderly
 ai / agentic   mcp servers · tool & function calling · router orchestration ·
                human-in-the-loop approvals · claude code · codex · custom skills
-testing        playwright · synpress · hardhat · foundry · unit · smoke · ci
+testing        playwright · synpress · vitest · hardhat · foundry · unit · smoke · ci
 infra          docker · kubernetes · gcp · aws · vercel · nginx · github actions
 ```
 
@@ -77,7 +77,7 @@ I use Claude Code, Codex, Multica AI and MCP-based workflows **every day** — n
 
 ### `// what I'm looking for`
 
-I'm actively open to **senior full-stack, frontend-heavy, Web3, product engineer, and founding engineer roles** — especially with teams building in Web3, AI-native software, fintech, developer tools, marketplaces, or product-led SaaS.
+I'm actively looking to **join a team** — senior software, senior fullstack, senior frontend, or senior Web3 / blockchain engineer roles. Best fit: teams building in Web3, AI-native software, fintech, developer tools, marketplaces, or product-led SaaS.
 
 The shape of the work I do best:
 - a small team where one engineer can own a meaningful surface area
