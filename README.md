@@ -12,7 +12,7 @@
 
 **I take ambiguous product requirements and turn them into shipped production systems.**
 
-`philippines · remote` — `6+ yrs eng` — `4+ yrs web3` — `daily claude code & codex`
+`philippines · remote` — `7+ yrs eng` — `4+ yrs web3` — `daily claude code & codex`
 
 [![Email](https://img.shields.io/badge/-carlomigueldy@gmail.com-0a0a0a?style=flat-square&logo=gmail&logoColor=white)](mailto:carlomigueldy@gmail.com)
 [![LinkedIn](https://img.shields.io/badge/-linkedin-0a0a0a?style=flat-square&logo=linkedin&logoColor=white)](https://linkedin.com/in/carlomigueldy)
@@ -69,7 +69,7 @@ infra          docker · kubernetes · gcp · aws · vercel · nginx · github a
 
 ### `// my AI-augmented engineering practice`
 
-I use Claude Code, Codex, and MCP-based workflows **every day** — not as autocomplete, but as a system. I design task breakdowns, tool boundaries, approval points, and reliability checks so agent-assisted work is something a senior engineer would actually ship. I've built custom Claude Code skill orchestrators with sub-agents (security audit pass over two production products, triaged into an epic, fixes shipped with cross-verification on a local stack).
+I use Claude Code, Codex, Multica AI and MCP-based workflows **every day** — not as autocomplete, but as a system. I design task breakdowns, tool boundaries, approval points, and reliability checks so agent-assisted work is something a senior engineer would actually ship. I've built custom Claude Code skill orchestrators with sub-agents (security audit pass over two production products, triaged into an epic, fixes shipped with cross-verification on a local stack).
 
 > **The differentiator**: I don't just *use* AI tools. I design the orchestration around them — tool surfaces, approval gates, test coverage — so the output is production-ready, not prototype-grade.
 
