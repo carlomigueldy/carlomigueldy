@@ -40,17 +40,17 @@ const miguel = {
 
 ### `// recent work worth talking about`
 
-**🛰 &nbsp; MCP server platform** — `@AltLayer`
-> Took over a backend handover of an MCP server exposing read/write tools across Uniswap, SushiSwap, Polymarket, 1inch, Balancer, OKX, DeBank, OpenSea and others. Introduced a router-orchestration pattern that consolidated **~400 tools → ~20 router tools** while preserving correct tool selection from natural-language inputs. Wired in CDP server wallets so LLMs can perform on-chain actions — with mandatory human confirmation before any write. Built the chat UI (multi-model, OpenRouter-backed) showing tool calls inline.
+**🛰 &nbsp; Rumour — Web3 social trading on Hyperliquid** — `@AltLayer`
+> Led frontend across the rumour-to-trade flow — owned the Farcaster Miniapp and LINE DappPortal shells end-to-end, the wallet-setup flow on Privy embedded wallets, the Tencent Chat messaging layer, and the perps trading UI on the Hyperliquid SDK. Ships as a PWA, Farcaster Miniapp, and LINE DappPortal Mini Dapp from a single React + Vite codebase.
 
-**🎯 &nbsp; Prediction markets platform** — `@Limitless Labs`
-> Founding engineer. Architected the Nest.js / Fastify / PostgreSQL backend using domain-driven design, structured around long-running multi-step business operations. Automated the full market lifecycle — creation, funding, on-chain execution, outcome reporting — turning a manual, error-prone process into an orchestration system that lets operators **create 10+ markets a day**.
+**🤖 &nbsp; Autonome — no-code AI-agent deployment platform** — `@AltLayer`
+> Owned the framework-discovery gallery, new-agent deployment flow, agent metadata editor, environment-variables dialog, and the Eliza framework UI integration inside the unified AltLayer Wizard frontend. Users pick a framework, configure persona and keys, and get a chat-ready agent in ~5 minutes.
 
-**🌐 &nbsp; Community NFT sale** — `@Atlantis World`
-> Backend services for a sale that raised **~$1M ETH** — merkle-tree signature verification, token & NFT airdrop scripts, contracts deployed and verified across Ethereum, Polygon, and Optimism.
+**🎯 &nbsp; Limitless Labs — prediction markets on Base** — `@Limitless Labs`
+> Architected the NestJS / Fastify / PostgreSQL backend using domain-driven design and automated the full market lifecycle into an orchestration system that let operators create 10+ markets a day. Collapsed the manually-assembled market-creation flow into a single operator action behind an internal form, REST API, and Gnosis Safe SDK approval link.
 
-**📊 &nbsp; Social trading platform** — `@AltLayer`
-> Frontend lead through several iterations to launch. Hyperliquid integration for long/short perps, Tencent Chat SDK for the social layer, pixelated custom UI as a PWA. E2E coverage including MetaMask wallet signing flows via Playwright + Synpress.
+**🌐 &nbsp; Atlantis World — Web3 social metaverse + $1M NFT sale** — `@Atlantis World`
+> Promoted from blockchain engineer to lead blockchain engineer. Owned 11 of 16 DeFi/Web3 protocol integrations end-to-end (Yearn, 1inch, Balancer, Aave, Perpetual Protocol, Moola, Lens, Filecoin, Snapshot, NFT.Storage, POAP) and ran the live shift for the community NFT sale that raised ~$1M ETH.
 
 ---
 
