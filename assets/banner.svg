@@ -1,0 +1,150 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 300" role="img" aria-label="Carlo Miguel Dy — senior fullstack engineer · web3 · ai-native. Open to work, remote from the Philippines.">
+  <title>Carlo Miguel Dy — senior fullstack engineer · web3 · ai-native</title>
+
+  <defs>
+    <!-- film grain -->
+    <filter id="grain" x="-5%" y="-5%" width="110%" height="110%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.82" numOctaves="2" stitchTiles="stitch" result="n"/>
+      <feColorMatrix in="n" type="saturate" values="0"/>
+    </filter>
+
+    <!-- soft outer shadow for the window -->
+    <filter id="lift" x="-20%" y="-20%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="14" stdDeviation="22" flood-color="#000000" flood-opacity="0.35"/>
+    </filter>
+
+    <!-- accent glow used by the status dots -->
+    <filter id="glow" x="-80%" y="-80%" width="260%" height="260%">
+      <feGaussianBlur stdDeviation="3" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+
+    <!-- scanline texture -->
+    <pattern id="scan" width="3" height="3" patternUnits="userSpaceOnUse">
+      <rect width="3" height="1" class="scanline"/>
+    </pattern>
+
+    <clipPath id="screen"><rect x="20" y="20" width="840" height="260" rx="16"/></clipPath>
+
+    <style>
+      svg{
+        --bg:#f3efe6; --panel:#fbf9f4; --frame:#e7e1d4; --chrome:#efeadf;
+        --ink:#1b1a16; --dim:#8c8676; --faint:#b6b0a0;
+        --accent:#c2410c; --accent2:#15803d; --wire:#1b1a16;
+      }
+      @media (prefers-color-scheme: dark){
+        svg{
+          --bg:#070a0f; --panel:#0c1016; --frame:#1b2230; --chrome:#11161f;
+          --ink:#ecebe6; --dim:#6b7686; --faint:#3a4456;
+          --accent:#f5a623; --accent2:#3fb950; --wire:#e7e6e1;
+        }
+      }
+
+      .bg{ fill:var(--bg); }
+      .panel{ fill:var(--panel); }
+      .frame{ fill:none; stroke:var(--frame); stroke-width:1.25; }
+      .chrome{ fill:var(--chrome); }
+      .scanline{ fill:var(--wire); opacity:.05; }
+      .grain{ opacity:.06; }
+
+      .mono{ font-family:'SF Mono','JetBrains Mono','Fira Code','Cascadia Code',ui-monospace,Menlo,Consolas,monospace; }
+      .prompt{ fill:var(--dim); }
+      .cmd{ fill:var(--accent); }
+      .arrow{ fill:var(--accent2); }
+      .ink{ fill:var(--ink); }
+      .dim{ fill:var(--dim); }
+      .title{ fill:var(--dim); letter-spacing:.5px; }
+
+      .name{ fill:var(--ink); font-weight:700; letter-spacing:5px; }
+      .role{ fill:var(--dim); letter-spacing:3px; }
+
+      .chip{ fill:none; stroke:var(--frame); stroke-width:1.25; }
+      .chiptext{ fill:var(--dim); letter-spacing:.5px; }
+
+      /* ---- motion: reveal once, then settle ---- */
+      .row{ opacity:0; animation:rise .55s cubic-bezier(.2,.7,.2,1) forwards; }
+      .r1{ animation-delay:.15s; } .r2{ animation-delay:.5s; }
+      .r3{ animation-delay:.85s; } .r4{ animation-delay:1.15s; } .r5{ animation-delay:1.5s; }
+
+      @keyframes rise{ from{opacity:0; transform:translateY(9px);} to{opacity:1; transform:translateY(0);} }
+      @keyframes blink{ 0%,48%{opacity:1;} 49%,100%{opacity:0;} }
+      @keyframes pulse{ 0%,100%{opacity:1;} 50%{opacity:.28;} }
+      @keyframes sweep{ 0%{transform:translateY(-40px);} 100%{transform:translateY(300px);} }
+
+      .cursor{ fill:var(--accent); animation:blink 1.05s steps(1) infinite; animation-delay:2s; }
+      .dot1{ animation:pulse 2.4s ease-in-out infinite; }
+      .dot2{ animation:pulse 2.4s ease-in-out .4s infinite; }
+      .dot3{ animation:pulse 2.4s ease-in-out .8s infinite; }
+      .sheen{ opacity:.04; fill:var(--wire); animation:sweep 7s linear infinite; }
+    </style>
+  </defs>
+
+  <!-- backdrop -->
+  <rect x="0" y="0" width="880" height="300" class="bg"/>
+
+  <!-- terminal window -->
+  <g filter="url(#lift)">
+    <rect x="20" y="20" width="840" height="260" rx="16" class="panel"/>
+    <rect x="20" y="20" width="840" height="260" rx="16" class="frame"/>
+  </g>
+
+  <!-- screen-clipped texture + content -->
+  <g clip-path="url(#screen)">
+    <rect x="20" y="20" width="840" height="260" fill="url(#scan)"/>
+    <rect x="20" y="20" width="840" height="260" class="grain" filter="url(#grain)"/>
+    <rect x="0" y="0" width="880" height="34" class="sheen"/>
+
+    <!-- title bar -->
+    <rect x="20" y="20" width="840" height="46" class="chrome"/>
+    <line x1="20" y1="66" x2="860" y2="66" stroke="var(--frame)" stroke-width="1.25"/>
+    <circle cx="48"  cy="43" r="6" fill="#ff5f56"/>
+    <circle cx="70"  cy="43" r="6" fill="#ffbd2e"/>
+    <circle cx="92"  cy="43" r="6" fill="#27c93f"/>
+    <text x="440" y="48" text-anchor="middle" class="mono title" font-size="13">carlomigueldy@dev — ~/portfolio — zsh</text>
+
+    <!-- line 1: whoami -->
+    <g class="row r1">
+      <text x="48" y="108" class="mono" font-size="15">
+        <tspan class="prompt">carlomigueldy</tspan><tspan class="dim"> ~ </tspan><tspan class="prompt">%</tspan><tspan class="cmd">  ./whoami</tspan>
+      </text>
+    </g>
+
+    <!-- line 2: the name (hero) -->
+    <g class="row r2">
+      <text x="48" y="162" class="mono name" font-size="42">CARLO MIGUEL DY</text>
+    </g>
+
+    <!-- line 3: role -->
+    <g class="row r3">
+      <text x="50" y="194" class="mono role" font-size="15">senior fullstack engineer<tspan class="ink"> · </tspan>web3<tspan class="ink"> · </tspan>ai-native</text>
+    </g>
+
+    <!-- line 4: status command -->
+    <g class="row r4">
+      <text x="48" y="236" class="mono" font-size="15">
+        <tspan class="prompt">carlomigueldy</tspan><tspan class="dim"> ~ </tspan><tspan class="prompt">%</tspan><tspan class="cmd">  ./status --now</tspan>
+      </text>
+    </g>
+
+    <!-- line 5: status chips -->
+    <g class="row r5">
+      <!-- open to work -->
+      <rect x="48" y="250" width="152" height="26" rx="13" class="chip"/>
+      <circle cx="66" cy="263" r="4" fill="var(--accent2)" class="dot1" filter="url(#glow)"/>
+      <text x="78" y="267" class="mono chiptext" font-size="12">open to work</text>
+
+      <!-- remote -->
+      <rect x="210" y="250" width="188" height="26" rx="13" class="chip"/>
+      <circle cx="228" cy="263" r="4" fill="var(--accent)" class="dot2" filter="url(#glow)"/>
+      <text x="240" y="267" class="mono chiptext" font-size="12">remote · philippines</text>
+
+      <!-- experience -->
+      <rect x="408" y="250" width="190" height="26" rx="13" class="chip"/>
+      <circle cx="426" cy="263" r="4" fill="var(--accent)" class="dot3" filter="url(#glow)"/>
+      <text x="438" y="267" class="mono chiptext" font-size="12">7+ yrs · 4+ yrs web3</text>
+
+      <!-- blinking cursor -->
+      <rect x="612" y="252" width="11" height="22" class="cursor"/>
+    </g>
+  </g>
+</svg>
