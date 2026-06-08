@@ -2,16 +2,20 @@
   ┌──────────────────────────────────────────────────────────────────────┐
   │  GitHub profile README — github.com/carlomigueldy                      │
   │  HTML here is limited to what GitHub's markup sanitizer allows:        │
-  │  no <style>, no inline style="", no <script>. All visual design lives  │
-  │  in the SVG assets (assets/banner.svg, assets/footer.svg), which are   │
-  │  theme-adaptive (light/dark) and animate on load.                      │
-  │  Swap the assets/* files anytime — paths stay the same.                │
+  │  no <style>, no inline style="", no <script>. Visual design lives in   │
+  │  SVG assets with embedded generated backgrounds and exact SVG text.     │
+  │  <picture> swaps light/dark assets via prefers-color-scheme; the dark  │
+  │  assets remain the fallback paths for broad GitHub compatibility.       │
   └──────────────────────────────────────────────────────────────────────┘
 -->
 
 <div align="center">
 
-<img src="assets/banner.svg" alt="Carlo Miguel Dy — senior fullstack engineer · web3 · ai-native. Open to work, remote from the Philippines." width="100%" />
+<picture>
+  <source media="(prefers-color-scheme: light)" srcset="assets/banner-light.svg">
+  <source media="(prefers-color-scheme: dark)" srcset="assets/banner.svg">
+  <img src="assets/banner.svg" alt="Carlo Miguel Dy — senior fullstack engineer / web3 / ai-native. Open to work, remote from the Philippines." width="100%" />
+</picture>
 
 <br><br>
 
@@ -131,6 +135,10 @@ If that sounds like your team — [carlomigueldy.dev](https://carlomigueldy.dev)
 
 <div align="center">
 
-<img src="assets/footer.svg" alt="built end-to-end · tested before shipped · shipped before perfected" width="100%" />
+<picture>
+  <source media="(prefers-color-scheme: light)" srcset="assets/footer-light.svg">
+  <source media="(prefers-color-scheme: dark)" srcset="assets/footer.svg">
+  <img src="assets/footer.svg" alt="built end-to-end · tested before shipped · shipped before perfected" width="100%" />
+</picture>
 
 </div>
