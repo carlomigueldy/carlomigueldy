@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 52" role="img" aria-label="built end-to-end · tested before shipped · shipped before perfected">
+  <title>built end-to-end · tested before shipped · shipped before perfected</title>
+  <defs>
+    <clipPath id="bar"><rect x="0" y="6" width="880" height="40" rx="10"/></clipPath>
+    <style>
+      svg{
+        --panel:#fbf9f4; --frame:#e7e1d4; --ink:#1b1a16; --dim:#8c8676;
+        --accent:#c2410c; --accent2:#15803d;
+      }
+      @media (prefers-color-scheme: dark){
+        svg{ --panel:#0c1016; --frame:#1b2230; --ink:#ecebe6; --dim:#6b7686;
+             --accent:#f5a623; --accent2:#3fb950; }
+      }
+      .panel{ fill:var(--panel); }
+      .frame{ fill:none; stroke:var(--frame); stroke-width:1.25; }
+      .mono{ font-family:'SF Mono','JetBrains Mono','Fira Code',ui-monospace,Menlo,Consolas,monospace; }
+      .dim{ fill:var(--dim); letter-spacing:.4px; }
+      .ok{ fill:var(--accent2); }
+      .ac{ fill:var(--accent); }
+      @keyframes pulse{ 0%,100%{opacity:1;} 50%{opacity:.3;} }
+      @keyframes shimmer{ 0%{transform:translateX(-220px);} 100%{transform:translateX(900px);} }
+      .live{ animation:pulse 2.2s ease-in-out infinite; }
+      .shim{ fill:var(--accent); opacity:.05; animation:shimmer 6s linear infinite; }
+    </style>
+    <linearGradient id="fade" x1="0" x2="1">
+      <stop offset="0" stop-color="white" stop-opacity="0"/>
+      <stop offset="0.5" stop-color="white" stop-opacity="1"/>
+      <stop offset="1" stop-color="white" stop-opacity="0"/>
+    </linearGradient>
+    <mask id="fademask"><rect x="0" y="6" width="880" height="40" fill="url(#fade)"/></mask>
+  </defs>
+
+  <rect x="0" y="6" width="880" height="40" rx="10" class="panel"/>
+  <g clip-path="url(#bar)">
+    <rect x="0" y="6" width="180" height="40" class="shim"/>
+  </g>
+  <rect x="0" y="6" width="880" height="40" rx="10" class="frame"/>
+
+  <circle cx="28" cy="26" r="4.5" class="ok live"/>
+  <text x="42" y="30" class="mono dim" font-size="12.5">online<tspan class="ac">  ·  </tspan>~/carlomigueldy</text>
+
+  <text x="838" y="30" text-anchor="end" class="mono dim" font-size="12.5">
+    <tspan class="ok">✓</tspan> built end-to-end<tspan class="ac">  ·  </tspan><tspan class="ok">✓</tspan> tested before shipped<tspan class="ac">  ·  </tspan><tspan class="ok">✓</tspan> shipped before perfected
+  </text>
+</svg>
