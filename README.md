@@ -1,127 +1,98 @@
 <!--
-  ┌──────────────────────────────────────────────────────────────────────┐
+  ┌────────────────────────────────────────────────────────────────────────┐
   │  GitHub profile README — github.com/carlomigueldy                      │
-  │  HTML here is limited to what GitHub's markup sanitizer allows:        │
-  │  no <style>, no inline style="", no <script>. Visual design lives in   │
-  │  SVG assets with embedded generated backgrounds and exact SVG text.     │
-  │  <picture> swaps light/dark assets via prefers-color-scheme; the dark  │
-  │  assets remain the fallback paths for broad GitHub compatibility.       │
-  └──────────────────────────────────────────────────────────────────────┘
+  │                                                                        │
+  │  Design system: Kinetic Cobalt — the system behind carlomigueldy.dev   │
+  │  (senior-portfolio docs/DESIGN.md). Cool-paper light-canonical ground, │
+  │  one cobalt accent (#2742F5), Archivo variable display voice,          │
+  │  JetBrains Mono labels, hairlines + corner ticks, mono ( annotations ).│
+  │                                                                        │
+  │  GitHub's sanitizer allows no <style>/<script>/inline styles, so the   │
+  │  visual layer lives in SVG assets under assets/ — emitted ONLY by      │
+  │  scripts/generate-readme-assets.mjs (never hand-edit them).            │
+  │  <picture> swaps light/dark via prefers-color-scheme; light is the     │
+  │  canonical fallback. The band + footer are theme-invariant by design   │
+  │  (always cobalt-on-paper / ink-on-paper, both themes — house rule).    │
+  └────────────────────────────────────────────────────────────────────────┘
 -->
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/hero-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="assets/hero-light.svg">
+  <img src="assets/hero-light.svg" alt="Carlo Miguel Dy — senior fullstack engineer · 7+ yrs shipping · 4+ yrs Web3. I ship Web3 products and AI-augmented systems end-to-end. Joining a team — replies < 24h. Northern Mindanao, Philippines · UTC+8 · remote." width="100%" />
+</picture>
 
 <div align="center">
 
-<picture>
-  <source media="(prefers-color-scheme: light)" srcset="assets/banner-light.svg">
-  <source media="(prefers-color-scheme: dark)" srcset="assets/banner.svg">
-  <img src="assets/banner.svg" alt="Carlo Miguel Dy — senior fullstack engineer / web3 / ai-native. Open to work, remote from the Philippines." width="100%" />
-</picture>
-
-<br><br>
-
-<a href="https://carlomigueldy.dev"><img src="https://img.shields.io/badge/Portfolio-carlomigueldy.dev-0D1117?style=flat-square&logo=vercel&logoColor=white" alt="Portfolio" /></a>
-&nbsp;
-<a href="mailto:carlomigueldy@gmail.com"><img src="https://img.shields.io/badge/Email-carlomigueldy@gmail.com-0D1117?style=flat-square&logo=gmail&logoColor=white" alt="Email" /></a>
-&nbsp;
-<a href="https://linkedin.com/in/carlomigueldy"><img src="https://img.shields.io/badge/LinkedIn-carlomigueldy-0D1117?style=flat-square&logo=linkedin&logoColor=white" alt="LinkedIn" /></a>
-&nbsp;
-<a href="https://x.com/carlomigueldy"><img src="https://img.shields.io/badge/X-@carlomigueldy-0D1117?style=flat-square&logo=x&logoColor=white" alt="X" /></a>
+<a href="https://www.carlomigueldy.dev"><img src="assets/chip-portfolio.svg" height="32" alt="Portfolio — carlomigueldy.dev" /></a>&nbsp;<a href="mailto:carlomigueldy@gmail.com"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/chip-email-dark.svg"><img src="assets/chip-email-light.svg" height="32" alt="Email — carlomigueldy@gmail.com" /></picture></a>&nbsp;<a href="https://www.linkedin.com/in/carlomigueldy"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/chip-linkedin-dark.svg"><img src="assets/chip-linkedin-light.svg" height="32" alt="LinkedIn — carlomigueldy" /></picture></a>&nbsp;<a href="https://x.com/carlomigueldy"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/chip-x-dark.svg"><img src="assets/chip-x-light.svg" height="32" alt="X — @carlomigueldy" /></picture></a>
 
 </div>
 
 > **I take ambiguous product requirements and turn them into shipped production systems.**
 
----
+<img src="assets/band.svg" alt="Stack marquee — TypeScript ✳ Next.js ✳ React ✳ Solidity ✳ NestJS ✳ Tailwind ✳ Flutter ✳ Supabase ✳ AWS ✳ Playwright — Frontend ✳ Frontend Architecture ✳ AI · Agentic ✳ Web3 ✳ Backend ✳ Testing ✳ Infrastructure" width="100%" />
 
-### `// what I actually do`
+### `( 01 )` WHAT I ACTUALLY DO
 
-I'm a **senior fullstack engineer** with deep Web3 experience and a daily AI-augmented engineering practice. I'm not just a frontend, backend, or smart contract engineer — I'm the one who owns the feature from a Figma frame and a half-written spec all the way to a green CI run and a production deploy.
+I'm a **senior fullstack engineer** — 7+ years software, 4+ years specializing in Web3, with a daily AI-augmented engineering practice. I'm not just a frontend, backend, or smart-contract engineer — I'm the one who owns the feature from a Figma frame and a half-written spec all the way to a green CI run and a production deploy.
 
 ```ts
-const miguel = {
-  ownsEndToEnd: ['frontend', 'backend', 'smart contracts', 'tests', 'ci/cd', 'deploy'],
-  shipsWith:    ['claude code', 'codex', 'mcp', 'sub-agents'],
-  bestAt:       'turning vague product requirements into production systems',
-  portfolio:    'https://carlomigueldy.dev',
-  status:       'open to joining a team · senior software / fullstack / web3 roles',
+const carlo = {
+  ownsEndToEnd: ["frontend", "backend", "smart contracts", "tests", "ci/cd", "deploy"],
+  worksIn:      ["claude code", "codex", "multica ai"], // where I work, not tools I reach for
+  designs:      ["mcp servers", "router orchestration", "agent harnesses", "hitl approval gates"],
+  bestAt:       "turning vague product requirements into production systems",
+  portfolio:    "https://www.carlomigueldy.dev",
+  status:       "open to joining a team · senior software / fullstack / web3 / product roles",
 };
 ```
 
 ---
 
-### `// recent work worth talking about`
+### `( 02 )` SELECTED WORK
 
-<table>
-<tr>
-<td width="50%" valign="top">
+| `( year )` | `( build )` | `( org · role )` | `( ↗ )` |
+|:---|:---|:---|:---|
+| `2025` | **[RUMOUR — WEB3 SOCIAL TRADING ON HYPERLIQUID](https://www.carlomigueldy.dev/projects/rumour-social-trading)**<br><sub>Signal-first chatrooms that turn anonymous market intel into Hyperliquid perp positions. Owned the Farcaster Miniapp and LINE DappPortal shells end-to-end, the wallet-setup flow on Privy embedded wallets, the Tencent Chat messaging layer, and the perps trading UI — one React + Vite codebase shipping as a PWA and two mini-app shells.</sub> | <sub>AltLayer<br>·<br>frontend lead</sub> | [↗](https://rumour.app) |
+| `2024` | **[AUTONOME — NO-CODE AI-AGENT DEPLOYMENT](https://www.carlomigueldy.dev/projects/autonome-agent-hosting)**<br><sub>Pick a framework, configure persona and keys, get a chat-ready agent in ~5 minutes. Owned the framework-discovery gallery, the new-agent deployment flow, the agent metadata editor, the env-vars dialog, and the Eliza framework's UI integration inside the unified AltLayer Wizard frontend.</sub> | <sub>AltLayer<br>·<br>product engineer</sub> | [↗](https://apps.autono.meme) |
+| `2024` | **[LIMITLESS — PREDICTION MARKETS ON BASE](https://www.carlomigueldy.dev/projects/limitless-labs-prediction-markets)**<br><sub>Owned backend architecture (NestJS · Fastify · PostgreSQL, domain-driven design) and the smart-contract integration layer. Collapsed the manually-assembled market-creation flow into a single operator action — operators went on to run 10+ markets a day — shipping across four services: API, contracts, indexer, frontend.</sub> | <sub>Limitless Labs<br>·<br>founding engineer</sub> | [↗](https://limitless.exchange) |
+| `2021–23` | **[ATLANTIS WORLD — WEB3 SOCIAL METAVERSE + $1M NFT SALE](https://www.carlomigueldy.dev/projects/atlantis-world-nft-sale)**<br><sub>Promoted from blockchain engineer to lead blockchain engineer. Owned 13 of 18 DeFi/Web3 protocol integrations end-to-end — Yearn, 1inch, Balancer, Aave, Perpetual Protocol, Lens, Filecoin, Snapshot, POAP and more — and ran the live shift for the community NFT sale that raised ~$1M in ETH.</sub> | <sub>Atlantis World<br>·<br>lead blockchain engineer</sub> | [↗](https://www.carlomigueldy.dev/projects/atlantis-world-nft-sale) |
 
-<br>
-&nbsp;🛰&nbsp;&nbsp;<b>Rumour</b>&nbsp;&nbsp;<img src="https://img.shields.io/badge/AltLayer-F5A623?style=flat-square&labelColor=0D1117" alt="AltLayer" />
-<br><br>
-<sub><b>Web3 social trading on Hyperliquid.</b> Led frontend across the rumour-to-trade flow — owned the Farcaster Miniapp and LINE DappPortal shells end-to-end, the wallet-setup flow on Privy embedded wallets, the Tencent Chat messaging layer, and the perps trading UI on the Hyperliquid SDK. Ships as a PWA, Farcaster Miniapp, and LINE Mini Dapp from a single React&nbsp;+&nbsp;Vite codebase.</sub>
-<br><br>
+<div align="right"><sub>
 
-</td>
-<td width="50%" valign="top">
+`( full index — including the MCP router, AltLLM, AltClaw + more → )` **[carlomigueldy.dev/work](https://www.carlomigueldy.dev/work)**
 
-<br>
-&nbsp;🤖&nbsp;&nbsp;<b>Autonome</b>&nbsp;&nbsp;<img src="https://img.shields.io/badge/AltLayer-F5A623?style=flat-square&labelColor=0D1117" alt="AltLayer" />
-<br><br>
-<sub><b>No-code AI-agent deployment platform.</b> Owned the framework-discovery gallery, new-agent deployment flow, agent metadata editor, environment-variables dialog, and the Eliza framework UI integration inside the unified AltLayer Wizard frontend. Users pick a framework, configure persona and keys, and get a chat-ready agent in ~5 minutes.</sub>
-<br><br>
-
-</td>
-</tr>
-<tr>
-<td width="50%" valign="top">
-
-<br>
-&nbsp;🎯&nbsp;&nbsp;<b>Limitless Labs</b>&nbsp;&nbsp;<img src="https://img.shields.io/badge/Limitless%20Labs-F5A623?style=flat-square&labelColor=0D1117" alt="Limitless Labs" />
-<br><br>
-<sub><b>Prediction markets on Base.</b> Architected the NestJS / Fastify / PostgreSQL backend using domain-driven design and automated the full market lifecycle into an orchestration system that let operators create 10+ markets a day. Collapsed the manually-assembled market-creation flow into a single operator action behind an internal form, REST API, and Gnosis Safe SDK approval link.</sub>
-<br><br>
-
-</td>
-<td width="50%" valign="top">
-
-<br>
-&nbsp;🌐&nbsp;&nbsp;<b>Atlantis World</b>&nbsp;&nbsp;<img src="https://img.shields.io/badge/Atlantis%20World-F5A623?style=flat-square&labelColor=0D1117" alt="Atlantis World" />
-<br><br>
-<sub><b>Web3 social metaverse + $1M NFT sale.</b> Promoted from blockchain engineer to lead blockchain engineer. Owned 11 of 16 DeFi/Web3 protocol integrations end-to-end (Yearn, 1inch, Balancer, Aave, Perpetual Protocol, Moola, Lens, Filecoin, Snapshot, NFT.Storage, POAP) and ran the live shift for the community NFT sale that raised ~$1M ETH.</sub>
-<br><br>
-
-</td>
-</tr>
-</table>
+</sub></div>
 
 ---
 
-### `// the stack, honestly`
+### `( 03 )` THE STACK
 
 ```
-languages      typescript · javascript · python · go · solidity
-frontend       react · next.js · tailwind · shadcn · chakra · react hook form · zod
-backend        node.js · nest.js · fastify · hono · postgres · prisma · ddd
-web3           foundry · hardhat · ethers · viem · wagmi · privy · gnosis safe · tenderly
-ai / agentic   mcp servers · tool & function calling · router orchestration ·
-               human-in-the-loop approvals · claude code · codex · custom skills
-testing        playwright · synpress · vitest · hardhat · foundry · unit · smoke · ci
-infra          docker · kubernetes · gcp · aws · vercel · nginx · github actions
+frontend          react · next.js · typescript · tailwind · flutter
+frontend arch     design systems · state & data fetching · pwa · miniapp shells (farcaster · line)
+ai · agentic      claude code · codex · multica ai · mcp servers · router orchestration ·
+                  multi-agent harnesses · context engineering · human-in-the-loop approvals
+web3              solidity · foundry · hardhat · ethers · viem · wagmi · privy · gnosis safe ·
+                  hyperliquid
+backend           node · nestjs · fastify · hono · python · postgres · prisma · supabase · ddd
+testing           playwright · synpress · vitest · msw · foundry
+infrastructure    docker · kubernetes · gcp · aws · vercel · github actions
 ```
 
 ---
 
-### `// my AI-augmented engineering practice`
+### `( 04 )` THE AI-AUGMENTED PRACTICE
 
-I use Claude Code, Codex, Multica AI and MCP-based workflows **every day** — not as autocomplete, but as a system. I design task breakdowns, tool boundaries, approval points, and reliability checks so agent-assisted work is something a senior engineer would actually ship. I've built custom Claude Code skill orchestrators with sub-agents (security audit pass over two production products, triaged into an epic, fixes shipped with cross-verification on a local stack).
+I use Claude Code, Codex, Multica AI, and MCP-based workflows **every day** — not as autocomplete, but as a system. Harness engineering, context engineering, multi-agent orchestration: I tune action spaces, tool surfaces, approval points, and guardrails so autonomous agent teams produce work a senior engineer would actually ship. At AltLayer that meant MCP harnesses and router orchestration over large tool sets (~400 tools routed through ~20); at home it's a daily loop of custom skills, sub-agent orchestrators, and cross-verified security passes over production code.
 
-> **The differentiator**: I don't just *use* AI tools. I design the orchestration around them — tool surfaces, approval gates, test coverage — so the output is production-ready, not prototype-grade.
+> **The differentiator:** I don't just *use* AI tools. I design the orchestration around them — tool boundaries, approval gates, test coverage — so the output is production-ready, not prototype-grade.
 
 ---
 
-### `// what I'm looking for`
+### `( 05 )` THE ASK
 
-I'm actively looking to **join a team** — senior software, senior fullstack, senior frontend, or senior Web3 / blockchain engineer roles. Best fit: teams building in Web3, AI-native software, fintech, developer tools, marketplaces, or product-led SaaS.
+I'm actively looking to **join a team** — senior software, senior frontend, senior blockchain, senior fullstack, or senior product engineer roles. IC, on a team. Best fit: teams building in Web3, AI-native software, fintech, developer tools, marketplaces, or product-led SaaS.
 
 The shape of the work I do best:
 
@@ -129,16 +100,12 @@ The shape of the work I do best:
 - ambiguous problems that need a working answer, not a perfect one
 - a culture that respects both shipping speed *and* test coverage
 
-If that sounds like your team — [carlomigueldy.dev](https://carlomigueldy.dev) or `carlomigueldy@gmail.com`. I read everything.
+If that sounds like your team — **[carlomigueldy.dev/contact](https://www.carlomigueldy.dev/contact)** or `carlomigueldy@gmail.com`. I read everything.
 
----
+<a href="https://www.carlomigueldy.dev/contact"><img src="assets/footer-ink.svg" alt="Let's build. — joining a team · replies < 24h · carlomigueldy.dev — built end-to-end ✳ tested before shipped ✳ shipped before perfected" width="100%" /></a>
 
-<div align="center">
+<div align="center"><sub>
 
-<picture>
-  <source media="(prefers-color-scheme: light)" srcset="assets/footer-light.svg">
-  <source media="(prefers-color-scheme: dark)" srcset="assets/footer.svg">
-  <img src="assets/footer.svg" alt="built end-to-end · tested before shipped · shipped before perfected" width="100%" />
-</picture>
+`( readme assets emitted by scripts/generate-readme-assets.mjs — kinetic cobalt, the design system behind carlomigueldy.dev )`
 
-</div>
+</sub></div>
